@@ -6,8 +6,12 @@ export const createApiKey = async (param: { expiration_days: number }) => {
 }
 
 export const getApiKey = async () => {
-    const { data } = await getService('/api_key/')
-    return data
+    try {
+        const { data } = await getService('/api_key/')
+        return data
+    } catch (error) {
+        return { api_keys: [] }
+    }
 }
 
 export const deleteApiKey = async (param: { api_key: string }) => {

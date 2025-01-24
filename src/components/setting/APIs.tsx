@@ -33,11 +33,6 @@ const APIsetting = () => {
     setKeyList(resp.api_keys)
   }
 
-  const onDeleteApiKey = async (api_key: string) => {
-    const res = await deleteApiKey({ api_key: api_key });
-    console.log("delete-api-key", res);
-  }
-
   useEffect(() => {
     (async () => {
       const res = await getApiKey();

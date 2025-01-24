@@ -45,10 +45,10 @@ export const RenderAPITableCell = (value: APIProps, columnKey: React.Key, setKey
 
     case "actions":
       const onDeleteApiKey = async (api_key: string) => {
-        const res = await deleteApiKey({ api_key: api_key });
+        await deleteApiKey({ api_key: api_key });
         const resp = await getApiKey();
-        console.log("api-Key", res.api_keys);
         setKeyList(resp.api_keys)
+
       }
 
       return (
