@@ -103,7 +103,7 @@ const APIsetting = () => {
       }, {
         uid: 'api_key', name: 'API key'
       }, {
-        uid: 'permission', name: 'Permissions'
+        uid: 'expires_at', name: 'Expires at'
       }, {
         uid: 'actions', name: 'Actions'
       }

@@ -5,6 +5,7 @@ import { MdDeleteOutline, MdUnarchive } from "react-icons/md";
 import { ArchivedChat } from "../chats/chat-list";
 import { BiConversation } from "react-icons/bi";
 import { deleteApiKey, getApiKey } from "@/services/dispatch/apikey-dispatch";
+import { formatDate } from "@/utils";
 
 
 
@@ -22,7 +23,6 @@ const CopyButton = (props: { copyvalue: string }) => {
       setCopying(false)
     }, 2000);
   }
-
   return <>
     {copying ? <IoCheckmarkOutline /> : <IoCopyOutline onClick={copy} />}
   </>
@@ -76,6 +76,12 @@ export const RenderAPITableCell = (value: APIProps, columnKey: React.Key, setKey
 
         </div>
       );
+    case 'expires_at':
+      return (
+        <div className="flex items-center self-center text-center justify-center" >
+          {formatDate(cellValue)}
+        </div>
+      )
     default:
       return cellValue;
   }
