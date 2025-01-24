@@ -29,6 +29,8 @@ const APIsetting = () => {
     setCreateModal(true);
     const res = await createApiKey({ expiration_days: 10 });
     setApiKey(res.api_key);
+    const resp = await getApiKey();
+    setKeyList(resp.api_keys)
   }
 
   const onDeleteApiKey = async (api_key: string) => {
