@@ -13,7 +13,7 @@ const Upgrade_Plan = () => {
             <div className="relative" >
               <IoCloseOutline className=" absolute w-8 h-8  right-10 top-10 " onClick={() => navigate(-1)} />
               <div className="max-sm:text-2xl text-4xl font-bold w-full justify-self-center text-center p-12 pt-24"  >Upgrade Your Plan </div>
-
+{/* 
               <div className="max-sm:block flex justify-between  max-w-5xl justify-self-center " >
                 <div className="max-sm:w-auto w-1/2  min-h-[500px] max-xs:m-2 m-8 border-2 rounded-3xl px-6 py-8 " >
                   <div className="text-3xl font-semibold px-10">Free</div>
@@ -61,7 +61,7 @@ const Upgrade_Plan = () => {
                       Massa sit condimentum nulla dolor.              </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </main>
         </div>

@@ -102,7 +102,7 @@ const SettingModal = () => {
               >
                 <SecuritySetting />
               </Tab>
-              <Tab
+              {/* <Tab
                 key="Your_APIs"
                 title={
                   <div className=" flex items-center">
@@ -112,7 +112,7 @@ const SettingModal = () => {
                 }
               >
                 <APIsetting />
-              </Tab>
+              </Tab> */}
             </Tabs>
           </div>
         </div>

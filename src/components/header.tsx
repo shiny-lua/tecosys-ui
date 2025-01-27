@@ -42,7 +42,7 @@ export default function Header(props: P) {
             <BsLayoutSidebar className={`h-4 w-4  `} />
           </Button>
           <Select selectedKeys={["cerina"]} className="w-32" variant="faded">
-            <SelectItem key={"cerina"}>Cerina</SelectItem>
+            <SelectItem key={"cerina"}>Nutaan</SelectItem>
           </Select>
         </div>
 
@@ -66,7 +66,7 @@ export default function Header(props: P) {
                   Profile
                 </DropdownItem>
                 <DropdownItem key="docs" onClick={()=>navigate(0)} >Docs</DropdownItem>
-                <DropdownItem key="apis" onClick={()=>navigate('/setting?id=Your_APIs')} >Your API's</DropdownItem>
+                {/* <DropdownItem key="apis" onClick={()=>navigate('/setting?id=Your_APIs')} >Your API's</DropdownItem> */}
                 <DropdownItem
                   key="edit"
                   onClick={handlelogout}

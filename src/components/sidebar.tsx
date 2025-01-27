@@ -95,15 +95,16 @@ export default function Sidebar({ isOpen, onClose }: P) {
             {/* Bottom Section */}
             <div className="p-3 border-t border-divider/20 flex flex-col gap-2.5 bg-background/50 backdrop-blur-sm">
               {isLoggedIn ? (
-                <Button
-                  radius="lg"
-                  color="primary"
-                  className="justify-start w-full h-11 font-medium shadow-sm"
-                  variant="shadow"
-                  onClick={()=>navigate('/upgrade_plan')}
-                >
-                  Upgrade to Pro
-                </Button>
+                // <Button
+                //   radius="lg"
+                //   color="primary"
+                //   className="justify-start w-full h-11 font-medium shadow-sm"
+                //   variant="shadow"
+                //   onClick={()=>navigate('/upgrade_plan')}
+                // >
+                //   Upgrade to Pro
+                // </Button>
+                <></>
               ) : (
                 <Button
                   radius="lg"

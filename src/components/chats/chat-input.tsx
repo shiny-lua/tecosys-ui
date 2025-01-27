@@ -78,7 +78,7 @@ export default function ChatInput() {
     });
 
     if (currentTypingMessageId || botResponseLoading) {
-      setTooltipOpen('Cerina is typing, please wait');
+      setTooltipOpen('Nutaan is typing, please wait');
       return;
     } else if (messageToSend === '') {
       setTooltipOpen('Please input text');
@@ -299,13 +299,13 @@ export default function ChatInput() {
             </PopoverContent>
           </Popover>
         </div>
-        <Button
+        {/* <Button
           isIconOnly
           variant="light"
           onClick={() => fileRef.current?.click()}
         >
           <MdOutlineAttachFile className="h-6 w-6" />
-        </Button>
+        </Button> */}
       </div>}
       <CustomModal isOpen={modalVisible} height="max-h-[450px] top-1/4" onClose={() => setModalVisible(false)} >
         <div className=" text-center">

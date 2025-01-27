@@ -103,7 +103,7 @@ const PdfDocument = ({ content }: PdfDocumentProps) => (
             message.role === 'user' ? styles.userMessage : styles.modelMessage,
           ]}
         >
-          <Text style={styles.role}>{message.role === 'model' ? 'Cerina' : 'User'}</Text>
+          <Text style={styles.role}>{message.role === 'model' ? 'Nutaan' : 'User'}</Text>
           <View>{parseMessage(message.text)}</View>
           <Text style={styles.timestamp}>{formatTimestamp(message.timestamp)}</Text>
         </View>

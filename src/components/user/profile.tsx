@@ -137,7 +137,7 @@ const Profile = () => {
             <div>
               <div className=" text-xl">AI Data Retention</div>
               <div className=" text-sm  opacity-50 max-xs:w-3/4 w-2/3">
-                AI Data Retention allows Cerina to use your searches to improve
+                AI Data Retention allows Nutaan to use your searches to improve
                 AI models. Turn this setting off if you wish to exclude your
                 data from this process
               </div>

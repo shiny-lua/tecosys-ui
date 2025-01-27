@@ -108,7 +108,7 @@ export default function ChatMessages(props: P) {
                   <img
                     src="/logo.png"
                     className="h-8 w-8 object-contain rounded-full flex-shrink-0"
-                    alt="cerina"
+                    alt="Nutaan"
                   />
                   <div className="bg-default-100 px-4 py-2 rounded-lg text-left animate-pulse">
                     <p className="text-default-600">{data?.botResponseLoading}...</p>
@@ -120,7 +120,7 @@ export default function ChatMessages(props: P) {
                   <img
                     src="/logo.png"
                     className="h-8 w-8 object-contain rounded-full flex-shrink-0"
-                    alt="cerina"
+                    alt="Nutaan"
                   />
                   <div className="bg-danger-100 px-4 py-2 rounded-lg">
                     <p className="text-danger-600">

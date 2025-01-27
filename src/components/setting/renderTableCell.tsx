@@ -38,7 +38,11 @@ export const RenderAPITableCell = (value: APIProps, columnKey: React.Key, setKey
   switch (columnKey) {
     case 'api_key':
       return (
+<<<<<<< HEAD
         <div className="flex  items-center self-center text-center justify-center min-w-[120px]" >
+=======
+        <div className="flex  items-center self-center text-center justify-center" >
+>>>>>>> a0aa6d3fd11a8fdf88168dbfd2f99caeecb29133
           {cellValue.slice(0, 6)}......{cellValue.slice(-5)}&nbsp;<CopyButton copyvalue={cellValue} />
         </div>
       )
@@ -62,7 +66,11 @@ export const RenderAPITableCell = (value: APIProps, columnKey: React.Key, setKey
               {/* </Tooltip> */}
             </PopoverTrigger>
             <PopoverContent>
+<<<<<<< HEAD
               <div className="px-1 py-2 break-all max-xs:w-[300px] max-[350px]:w-[200px]">
+=======
+              <div className="px-1 py-2">
+>>>>>>> a0aa6d3fd11a8fdf88168dbfd2f99caeecb29133
                 {value.api_key}
               </div>
             </PopoverContent>

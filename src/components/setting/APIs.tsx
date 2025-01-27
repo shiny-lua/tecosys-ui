@@ -16,7 +16,13 @@ import {
 import { useEffect, useState } from "react";
 import { RenderAPITableCell } from "./renderTableCell";
 import CustomModal from "../customModal";
+<<<<<<< HEAD
 import { createApiKey, deleteApiKey, getApiKey } from "@/services/dispatch/apikey-dispatch";
+=======
+import axios from "axios";
+import { createApiKey, getApiKey } from "@/services/dispatch/user-dispatch";
+import { StringSchema } from "yup";
+>>>>>>> a0aa6d3fd11a8fdf88168dbfd2f99caeecb29133
 
 
 
@@ -29,14 +35,20 @@ const APIsetting = () => {
     setCreateModal(true);
     const res = await createApiKey({ expiration_days: 10 });
     setApiKey(res.api_key);
+<<<<<<< HEAD
     const resp = await getApiKey();
     setKeyList(resp.api_keys)
+=======
+>>>>>>> a0aa6d3fd11a8fdf88168dbfd2f99caeecb29133
   }
 
   useEffect(() => {
     (async () => {
       const res = await getApiKey();
+<<<<<<< HEAD
       console.log("api-Key", res.api_keys);
+=======
+>>>>>>> a0aa6d3fd11a8fdf88168dbfd2f99caeecb29133
       setKeyList(res.api_keys)
     })()
   }, [])
@@ -117,7 +129,11 @@ const APIsetting = () => {
       <TableBody items={keyList}>
         {(item) => (
           <TableRow key={item.api_key}>
+<<<<<<< HEAD
             {(columnKey) => <TableCell>{RenderAPITableCell(item, columnKey, setKeyList)}</TableCell>}
+=======
+            {(columnKey) => <TableCell>{RenderAPITableCell(item, columnKey)}</TableCell>}
+>>>>>>> a0aa6d3fd11a8fdf88168dbfd2f99caeecb29133
           </TableRow>
         )}
       </TableBody>

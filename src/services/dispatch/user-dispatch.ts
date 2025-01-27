@@ -49,4 +49,18 @@ export const logoutAllDevices = async () => {
   return data
 }
 
+<<<<<<< HEAD
+=======
+export const createApiKey = async (param: {expiration_days: number}) => {
+  const { data } = await postService('/api_key/', param)
+  return data
+}
+
+export const getApiKey = async () => {
+  const { data } = await getService('/api_key/')
+  return data
+}
+
+
+>>>>>>> a0aa6d3fd11a8fdf88168dbfd2f99caeecb29133
 

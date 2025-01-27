@@ -43,7 +43,7 @@ export default function UserMessage(props: P) {
     setEditing(false)
     setButtonVis(false)
       if (currentTypingMessageId || botResponseLoading) {
-        console.log('Cerina is typing, please wait');
+        console.log('Nutaan is typing, please wait');
         return;
       } else if (inputValue === '') {
         console.log('Please input text');

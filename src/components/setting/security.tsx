@@ -50,17 +50,17 @@ const getDeviceInfo = (deviceName: string) => {
       os: userAgent.includes("windows")
         ? "Windows"
         : userAgent.includes("mac")
-        ? "macOS"
-        : userAgent.includes("linux")
-        ? "Linux"
-        : "Unknown",
+          ? "macOS"
+          : userAgent.includes("linux")
+            ? "Linux"
+            : "Unknown",
       browser: userAgent.includes("chrome")
         ? "Chrome"
         : userAgent.includes("firefox")
-        ? "Firefox"
-        : userAgent.includes("safari")
-        ? "Safari"
-        : "Unknown",
+          ? "Firefox"
+          : userAgent.includes("safari")
+            ? "Safari"
+            : "Unknown",
       version:
         userAgent.match(/chrome\/([0-9.]+)/i)?.[1] ||
         userAgent.match(/firefox\/([0-9.]+)/i)?.[1] ||
